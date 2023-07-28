@@ -1,0 +1,14 @@
+syntax "pascal" "\.pas$"
+comment "{}"
+
+#variable color
+color green "\<(integer|real|byte|word|shortint|longint|int64|char|string|boolean|record|array)\>"
+
+#keywords colors
+color cyan "\<(begin|end|uses|type|const|var)\>"
+color brightcyan "\<(procedure|function|write|wtiteln)\>"
+color brightmagenta "\<(for|to|downto|do|then|if|else|case|while|repeat|until|in|break|continue|of|or|div)\>"
+
+#others colors
+color magenta "[(){}]" "\[" "\]"
+color yellow "[.;:,+*|=\%]" "<" ">"  "/" "&"
