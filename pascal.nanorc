@@ -1,5 +1,5 @@
 syntax "pascal" "\.pas$"
-comment "{}"
+
 
 #variable color
 color green "\<(integer|real|byte|word|shortint|longint|int64|char|string|boolean|record|array)\>"
@@ -12,3 +12,7 @@ color brightmagenta "\<(for|to|downto|do|then|if|else|case|while|repeat|until|in
 #others colors
 color magenta "[(){}]" "\[" "\]"
 color yellow "[.;:,+*|=\%]" "<" ">"  "/" "&"
+
+#comment
+color brightred "//.$"
+color brightred start="\{" end="\}"
